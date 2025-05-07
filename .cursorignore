@@ -1,0 +1,11 @@
+# Ignore all files in the data directory
+data/*
+
+# Ignore all files in the logs directory
+logs/*
+
+# Ignore all files in the wandb directory
+wandb/*
+
+# Ignore all files in the models directory
+models/*
