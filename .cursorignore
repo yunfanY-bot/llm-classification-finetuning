@@ -1,6 +1,3 @@
-# Ignore all files in the data directory
-data/*
-
 # Ignore all files in the logs directory
 logs/*
 
@@ -9,3 +6,5 @@ wandb/*
 
 # Ignore all files in the models directory
 models/*
+
+src/unsloth/unsloth_compiled_cache/*

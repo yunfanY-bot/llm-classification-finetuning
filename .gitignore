@@ -185,6 +185,8 @@ wandb/*
 # Ignore all files in the models directory
 models/*
 
+# Ignore all files in the unsloth_compiled_cache directory
+src/unsloth/unsloth_compiled_cache/*
 
 
 

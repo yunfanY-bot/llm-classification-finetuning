@@ -1,0 +1,43 @@
+# Sample Training Configuration for LLM Preference Prediction
+
+# Model Configuration
+model:
+  type: "sequence"  # Can be "sequence" or "siamese"
+  model_name_or_path: "meta-llama/Llama-3.2-1B" # Path to pretrained model or model identifier from Hugging Face Model Hub
+  # embedding_dim: 768 # Relevant for Siamese if not inferable or different from standard (e.g. 768 for bert-base)
+
+  loading: "qlora" # Options: "standard", "lora", "qlora"
+
+  # Parameters for LoRA (if loading: "lora")
+  lora_params:
+    r: 8
+    alpha: 16
+    dropout: 0.1
+    # target_modules: ["query", "value"] # Example: specific modules for LoRA, depends on model architecture
+
+  # Parameters for QLoRA (if loading: "qlora")
+  qlora_params:
+    r: 8
+    alpha: 16
+    dropout: 0.1
+    bits: 4 # Or 8, for quantization
+    quant_type: "nf4"
+
+# Data Configuration
+data:
+  train_path: "data/train.csv" # Relative or absolute path to the training data
+
+# Training Configuration
+training:
+  num_epochs: 3
+  batch_size: 8 # Adjust based on GPU memory and model size
+  learning_rate: 2.0e-7 # Using scientific notation for float
+  max_sequence_length: 1024 # Max length for tokenized sequences
+  num_labels: 3 # For winner_model_a, winner_model_b, winner_tie
+  # output_dir: "./llm_preference_model_output" # Directory to save model checkpoints and logs
+  # save_every_n_epochs: 1
+  gradient_accumulation_steps: 2
+  # warmup_steps: 0
+
+# Other configurations
+# random_seed: 42 

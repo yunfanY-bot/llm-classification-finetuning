@@ -1,0 +1,11 @@
+{
+  "job_id": "name='tunedModels/tuned-gemini-20250509041136-9lzfg3wqci39' state=<JobState.JOB_STATE_QUEUED: 'JOB_STATE_QUEUED'> create_time=None start_time=None end_time=None update_time=None error=None description=None base_model=None tuned_model=None supervised_tuning_spec=None tuning_data_stats=None encryption_spec=None partner_model_tuning_spec=None distillation_spec=None experiment=None labels=None pipeline_job=None tuned_model_display_name=None",
+  "model_name": "tuned-gemini-20250509-041136",
+  "base_model": "models/gemini-1.5-flash-001-tuning",
+  "creation_time": "2025-05-09T04:11:52.241697",
+  "hyperparameters": {
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "epochs": 3
+  }
+}

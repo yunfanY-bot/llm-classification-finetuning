@@ -1,0 +1,11 @@
+{
+  "job_id": "<coroutine object AsyncTunings.tune at 0x00000171B26BA940>",
+  "model_name": "tuned-gemini-20250509-040922",
+  "base_model": "models/gemini-1.5-flash",
+  "creation_time": "2025-05-09T04:09:23.526435",
+  "hyperparameters": {
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "epochs": 3
+  }
+}
