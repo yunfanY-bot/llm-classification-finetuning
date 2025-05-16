@@ -186,7 +186,11 @@ wandb/*
 models/*
 
 # Ignore all files in the unsloth_compiled_cache directory
+
 src/unsloth/unsloth_compiled_cache/*
+src/unsloth/gemma-3/*
+src/unsloth/trainer_output/*
+src/unsloth/wandb/*
 
 
 

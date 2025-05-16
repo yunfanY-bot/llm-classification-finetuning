@@ -100,7 +100,7 @@ def load_model_with_qlora(model_name_or_path, num_labels, r, lora_alpha, lora_dr
 
 if __name__ == '__main__':
     # Example Usage (Illustrative)
-    model_path = "meta-llama/Llama-3.2-1B" # Replace with a suitable model
+    model_path = "google/gemma-3-4b-pt" # Replace with a suitable model
     
     # Standard model
     # seq_model = SequenceClassificationModel(model_path, num_labels=3)

@@ -8,3 +8,6 @@ wandb/*
 models/*
 
 src/unsloth/unsloth_compiled_cache/*
+src/unsloth/gemma-3/*
+src/unsloth/trainer_output/*
+src/unsloth/wandb/*
